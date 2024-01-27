@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagvad Geeta</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container"> 
+        <h2>Bhagvad Gita Search Engine</h2>
+        <div id="query">
+            <p class="heading">Search Any Chapter</p>
+            <input type="text" id="chapter" value="1">
+            <button id="search" onclick="get()">Search</button>
+        </div>
+        <div class="response invisible">
+            <div class="chName">
+                <p class="heading">Chapter Name</p>
+                <p id="nameOutput">Loading...</p>
+            </div>
+            <div class="mName">
+                <p class="heading">Meaning of the Name</p>
+                <p id="meaning">Loading...</p>
+            </div>
+            <p class="heading">Summary</p>
+            <p id="summary">Loading...</p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

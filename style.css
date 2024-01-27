@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    font-size: large;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.heading{
+    font-weight: bold;
+}
+
+.container{
+    width: 50vw;
+    height: fit-content;
+    background-color: #645949;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.container h2{
+    text-align: center;
+    margin: 1.5rem;
+}
+
+
+
+
+/*  
+    1. Query Part - 39
+    2. Response Part - 78
+*/
+
+
+
+
+/* 1. Query Part */
+
+#query{
+    display: flex;
+    align-items: center;
+}
+
+#query input, button{
+    height: 1.5rem;
+    font-size: 1rem;
+    padding: 0;
+    margin-left: 1rem;
+    outline: none;
+    background: none;
+    border: none;
+}
+
+#query input{
+    background: white;
+    border-radius: 0.4rem;
+    padding-left: 0.5rem;
+}
+
+#query button{
+    background: #b94fe6;;
+    color: white;
+    border-radius: 0.4rem;
+    padding: 0 0.5rem;
+    cursor: pointer;
+}
+
+#query button:hover{
+    background-color: #9735c1;
+}
+
+
+/* 2. Response Part */
+
+.chName, .mName{
+    display: flex;
+    justify-content: space-between;
+}
+
+.response #summary {
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
