@@ -3,6 +3,7 @@ body{
     padding: 0;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: orange;
@@ -16,11 +17,12 @@ body{
 }
 
 .container{
-    width: 50vw;
+    width: 40vw;
     height: fit-content;
     background-color: #645949;
     padding: 2rem;
     border-radius: 2rem;
+    margin-top: 50px;
 }
 
 .container h2{
@@ -32,8 +34,10 @@ body{
 
 
 /*  
-    1. Query Part - 39
-    2. Response Part - 78
+    1. Query Part - 46
+    2. Response Part - 83
+    3. Media Query 1 - 107
+    4. Media Query 2 - 128
 */
 
 
@@ -50,7 +54,7 @@ body{
     height: 1.5rem;
     font-size: 1rem;
     padding: 0;
-    margin-left: 1rem;
+    margin: 1rem;
     outline: none;
     background: none;
     border: none;
@@ -75,6 +79,7 @@ body{
 }
 
 
+
 /* 2. Response Part */
 
 .chName, .mName{
@@ -87,3 +92,44 @@ body{
     text-align: justify;
 }
 
+
+
+/* 3. Copyright */
+
+.copyright {
+    font-size: 0.75rem;
+    margin: 2rem;
+    position: relative;
+}
+
+
+
+/* 4. Media Query 1 */
+
+@media(max-width:992px) {
+    #query{
+        flex-direction: column;
+    }
+    #query input, button, p{
+        margin: 0.5rem;
+    }
+
+    .container{
+        width: 60vw;
+    }
+
+    .response{
+        margin-top: 1.5rem;
+    }
+}
+
+
+
+/* 5. Media Query 2 */
+
+@media(max-width:768px) {
+    .container{
+        width: 80vw;
+        height: fit-content;
+    }
+}
